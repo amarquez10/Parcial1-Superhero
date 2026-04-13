@@ -12,15 +12,23 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = PrimaryRed,
+    secondary = DarkBlueGray,
+    background = SurfaceBlack,
+    surface = DarkBlueGray,
+    onPrimary = BackgroundWhite,
+    onBackground = BackgroundWhite,
+    onSurface = BackgroundWhite
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = PrimaryRed,
+    secondary = DarkBlueGray,
+    background = BackgroundWhite,
+    surface = BackgroundWhite,
+    onPrimary = BackgroundWhite,
+    onBackground = SurfaceBlack,
+    onSurface = SurfaceBlack
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -37,7 +45,7 @@ private val LightColorScheme = lightColorScheme(
 fun Parcial1MovilSuperHeroeTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

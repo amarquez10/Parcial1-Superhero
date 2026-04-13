@@ -21,6 +21,7 @@ import coil.compose.AsyncImage
 import com.example.parcial1movilsuperheroe.model.Superhero
 import com.example.parcial1movilsuperheroe.ui.SuperheroDetailUiState
 import com.example.parcial1movilsuperheroe.ui.SuperheroViewModel
+import com.example.parcial1movilsuperheroe.ui.theme.*
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -121,14 +122,14 @@ fun DetailContent(hero: Superhero) {
             Spacer(modifier = Modifier.height(16.dp))
 
             // Stats
-            Text("Estadísticas", fontWeight = FontWeight.Bold, fontSize = 20.sp)
+            Text("Estadísticas", fontWeight = FontWeight.Bold, fontSize = 20.sp, color = MaterialTheme.colorScheme.primary)
             Spacer(modifier = Modifier.height(8.dp))
-            StatBar("Inteligencia", hero.intelligence, Color(0xFF4CAF50))
-            StatBar("Fuerza", hero.strength, Color(0xFFF44336))
-            StatBar("Velocidad", hero.speed, Color(0xFFFF9800))
-            StatBar("Durabilidad", hero.durability, Color(0xFF9E9E9E))
-            StatBar("Poder", hero.power, Color(0xFF9C27B0))
-            StatBar("Combate", hero.combat, Color(0xFF3F51B5))
+            StatBar("Inteligencia", hero.intelligence, StatGreen1)
+            StatBar("Fuerza", hero.strength, StatGreen2)
+            StatBar("Velocidad", hero.speed, StatGreen3)
+            StatBar("Durabilidad", hero.durability, StatGreen4)
+            StatBar("Poder", hero.power, StatGreen5)
+            StatBar("Combate", hero.combat, StatGreen6)
         }
     }
 }
