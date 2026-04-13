@@ -3,8 +3,8 @@ package com.example.parcial1movilsuperheroe.ui.theme
 import androidx.compose.ui.graphics.Color
 
 // Paleta Roja/Oscura para Interfaz
-val PrimaryRed = Color(0xFF00008B)
-val DarkBlueGray = Color(0xFF5CA4A7)
+val PrimaryRed = Color(0xFF00008B)//PRUEBA CAMBIO DE COLOR DE ROJO A AZUL CLARO
+val DarkBlueGray = Color(0xFF5CA4A7)//PRUEBA CAMBIO DE COLOR GRIS A AZUL
 val BackgroundWhite = Color(0xFFFFFFFF)
 val SurfaceBlack = Color(0xFF161515)
 
